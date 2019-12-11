@@ -98,26 +98,26 @@
         <h2 class="subtitle" data-aos="fade-down">Contacto</h2>
         <div class="wrapper">
             <div class="column-left-4" data-aos="fade-left">
-                <form  method="POST" name="contacto" netlify >
-                
-                    <label class="label"><span class="content">Nombre </span></label>
-                    <input name="nombre"  type="text" />
-                    
-                    
-                    <label class="label"><span class="content">email</span></label>
-                    <input name="email" type="email" />
-                    
-                    
-                    <label class="label"><span class="content">fono</span></label>
-                    <input name="telefono" type="text"  />
-                    
-                   
-                    <label class="label"><span class="content">text</span></label>
-                    <textarea name="mensaje"  ></textarea>
-            
-                    <button type="submit"  >submit</button>
-                    
-                    </form>
+                <form class="form" method="POST" name="contacto" data-netlify="true">
+                <div class="section-form">
+                <label class="label"><span class="content">Nombre </span></label>
+                <input class="input" type="text" name="nombre"/>
+                </div>
+                <div class="section-form">
+                <label class="label"><span class="content">email</span></label>
+                <input class="input" type="email" name="email"/>
+                </div>
+                <div class="section-form">
+                <label class="label"><span class="content">fono</span></label>
+                <input class="input" type="text" name="telefono" />
+                </div>
+                <div class="section-form">
+                <label class="label"><span class="content">text</span></label>
+                <textarea class="textarea" name="mensaje"></textarea>
+    
+                <input class="submit-btn" type='submit' >
+                </div>
+                </form>
             </div>
             <div class="column-right-4" data-aos="fade-right">
                 <img class="img-form"  src="images/form-img.svg">
