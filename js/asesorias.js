@@ -19,10 +19,16 @@ AOS.init({duration: 2000});
     const burguer = document.querySelector(".icon"); 
     const menu = document.querySelector(".menu");
 
-    const menuId = document.getElementById("menu"); 
+    
     burguer.addEventListener('click', () => {
         menu.classList.toggle('menu-active'); 
         
     }
     )
+
+    const list = document.querySelector(".list");
+
+    menu.addEventListener('click', () => {
+        menu.classList.toggle('menu-active')
+    }); 
       
