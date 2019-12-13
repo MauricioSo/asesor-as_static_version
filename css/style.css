@@ -121,7 +121,8 @@
     box-shadow: 10px 10px 5px grey;
     margin: 5%;
     background: #FAF8F8;
-    height: 350px; 
+    height: 350px;
+    z-index: 3; 
 }
 
 .title-card {
@@ -329,6 +330,54 @@
     to {opacity: 1}
   }
 
+  /*side bar de los social media*/
+  /* Fixed/sticky icon bar (vertically aligned 50% from the top of the screen) */
+.icon-bar {
+    position: fixed;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    z-index: 6;
+  }
+  
+  /* barra de iconos */
+  .icon-bar a {
+    display: block;
+    text-align: center;
+    padding: 16px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 20px;
+    z-index: 1000;
+  }
+  
+  /* icon de social media*/
+  .icon-bar a:hover {
+    background-color: #000;
+    
+  }
+  
+  .facebook {
+    background: #3B5998;
+    color: white;
+    z-index: 1000;
+  }
+  
+  .twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  
+  .instagram {
+    background: #cc66ae;
+    color: white;
+  }
+  
+
+  
+ 
+  /*responsiveness*/ 
   @media screen and (max-width: 992px){
     .card {
       margin: 2%;
